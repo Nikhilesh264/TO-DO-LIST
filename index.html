@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to external JavaScript file -->
+  <script src="script.js" defer></script>
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Container for the entire content -->
+  <div class="container">
+    <!-- Container for the main content box -->
+    <div class="content-box">
+      <!-- Header section -->
+      <header>
+        <!-- Title -->
+        <h1>To-Do List</h1>
+        <!-- Display date and time -->
+        <div class="date-time">
+          <span class="date"></span>
+          <span class="time"></span>
+        </div>
+      </header>
+
+      <!-- Task input section -->
+      <div class="task-input">
+        <!-- Input field to add new tasks -->
+        <input type="text" placeholder="Enter a new task" id="task-input">
+        <!-- Button to add tasks -->
+        <button id="add-task">Add Task</button>
+      </div>
+
+      <!-- Task list section -->
+      <div class="task-list">
+        <!-- Unordered list to display tasks -->
+        <ul id="task-list"></ul>
+      </div>
+
+      <!-- Task options section -->
+      <div class="task-options">
+        <!-- Dropdown for task priority -->
+        <div class="priority-dropdown">
+          <label for="priority-select">Priority:</label>
+          <select id="priority-select">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <!-- Dropdown for task category -->
+        <div class="category-dropdown">
+          <label for="category-select">Category:</label>
+          <select id="category-select">
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="errands">Errands</option>
+          </select>
+        </div>
+        <!-- Input field for task due date -->
+        <div class="due-date">
+          <label for="due-date-input">Due Date:</label>
+          <input type="date" id="due-date-input">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
